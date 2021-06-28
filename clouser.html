@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>COUNT</title>
+
+         <style>
+             body {
+                 background-color: silver;
+             }
+             .count{
+                 text-align: center;
+                 margin-top: 100px;
+                 font-size: 15px;
+                 color: blue;
+                 font-size: 20px;
+                 
+             }
+             .btn{
+                color: white;
+                background-color:#bd9234;
+                border-color:#bd9234 ;
+                padding: 10px 20px;
+                border-radius: 4px;
+    
+       }
+
+         </style>
+         <script>
+             
+               
+            function fnClick() {
+                       var count = 0
+                       return function () {
+                    count = count + 1
+                    console.log(`Clicked me ${count} Times`)
+                       }
+             }
+             function fnDontClick() {
+                
+
+             }
+             var innerFunc  = fnClick()
+           
+         </script>
+    </head>
+    <body>
+        <div class="count">
+            <h2>Clouser</h2>
+            
+            <button onclick="innerFunc()" class="btn">Click Me</button>
+            <button onclick="fnDontClick()" class="btn">Dont Click Me</button>
+       
+        </div>
+
+    </body>
+</html>
