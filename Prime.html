@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime</title>
+
+         <style>
+             .prime{
+                 text-align: center;
+                 margin-top: 100px;
+             }
+         </style>
+         <script>
+  
+                 function fnCheckPrime() {
+
+                     var n,i, flag =true;
+                     n = document.myform.n.value;
+                   
+                     for (i = 2; i <=n-1 ;i++ )
+                     if (  n % i == 0 ) {
+                         flag =false;
+                         break;
+                     }
+                         if (flag == true)
+                            console.log(n+ " is prime");
+                          else
+                          console.log(  n + "is not a prime")
+                     }
+                 
+
+
+         </script>
+
+
+    </head>
+    <body>
+        <div class="prime">
+            <h2>Check the number is prime or not</h2>
+            <form name ="myform">
+              <input type ="text" name=n  >
+              <input type="button" value="Check" onclick="fnCheckPrime()">
+        </form>
+        </div>
+    </body>
+</html>
