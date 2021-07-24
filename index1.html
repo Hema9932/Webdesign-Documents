@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+        <style>
+            .double{
+                text-align: center;
+           
+            }
+            .double ul p{
+             font-size: 25px;
+         
+            }
+            .double h1{
+                color: red;
+            }
+            .enter{
+                text-align: center;
+            }
+            .enter h1{
+                color: red;
+                
+            }
+            </style>
+            <style>
+            .form-control{
+              padding: 10px;
+              border: 1px solid white;
+              border-radius: ;
+              height: 35px;
+              weight:400px;
+            }
+            
+           
+        </style>
+
+    </head>
+    <body>
+
+   <div class="double">
+        <h1> Event function</h1>
+        <h1>DoubleClick</h1>
+        <ul>
+            <p>jquery dbclick</p>
+            <p>jquery mouseenter</p>
+            <p>jquery mouseleave</p>
+            <p>jquery mousedown</p>
+            <p>jquery mouseup</p>
+            <p>jquery hover</p>
+            <p>jquery focus and blur</p>
+</ul>
+
+<script>
+            $(document).ready(function(){
+              $("ul p").dblclick(function(){
+                $(this).hide();
+              });
+            });
+            </script>
+            </head>
+            
+            
+    </div>
+
+
+<div class="enter" >
+   <h1>mouseenter</h1>
+    <h3>Enter this paragraph.</h3>
+    <script>
+        $(document).ready(function(){
+          $(".enter h3").mouseenter(function(){
+            alert("hello jquery!");
+          });
+        });
+        </script>
+      
+ </div> 
+
+
+   
+
+  <script>
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("outline-color", "blue");
+      });
+      $("input").blur(function(){
+        $(this).css("outline-color", "green");
+      });
+    });
+    </script>
+    </head>
+    </body>
+      <div class= "form">
+        <h3>Form</h3>
+        <input type="text" class="form-control"/><br>
+        <input type="text" class="form-control"/>
+      </div>
+    
+<div class="click">
+  <h2>Click the color will be change</h2>
+  
+
+      <script>
+        $(document).ready(function(){
+          $("h2").on({
+            mouseenter: function(){
+              $(this).css("background-color", "pink");
+            },  
+              mouseleave: function(){
+              $(this).css("outline-color", "lightblue");
+            }, 
+            click: function(){
+              $(this).css("background-color", "yellow");
+            }  
+          });
+        });
+        </script>
+        </head>
+      
+        
+       
+        
+
+      </div>
+  
+  </body>
+    
+   
+</html>
+
+
+
+  
